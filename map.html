@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapa</title>
+</head>
+
+<body>
+    <!-- 
+        mapear areas de click
+        é pai de area
+        display é none
+        coords="1956,645,1937,581,1851,560,1786,631,1822,632,1849,620,1833,646,1886,665,1891,637"
+    -->
+    <img src="brasil.jpg" usemap="#mapaDoBRasil">
+    
+    <map name="mapaDoBRasil">
+        <!-- 
+        shape: retangular, poligono, circulo
+        alt: texto alternativo
+        href: area é uma tag de link (pode usar parametros de 'a')
+        coords: coordenada 
+
+    -->
+        <area shape="poly" 
+        coords="1956,645,1937,581,1851,560,1786,631,1822,632,1849,620,1833,646,1886,665,1891,637"
+         href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" 
+         alt="Rio Grande do Norte"
+         target="_blank">
+    </map>
+
+</body>
+
+</html>
