@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        canvas{
+            border: 5px #000 solid;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script>
+        function desenha(){
+            var canvas = document.getElementById('tela');
+            var ctx = canvas.getContext('2d')
+            ctx.fillRect(25, 25, 100, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <!--
+        block
+        area de bitmap para trabalhar com desenhos
+
+    -->
+    <canvas id="tela" width="400px" height="400px">
+        O navegado não tem suporte
+    </canvas>
+    <script>desenha();</script>
+</body>
+
+</html>
