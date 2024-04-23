@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cx de dialogo</title>
+
+    <script>
+        function abrirDialog(){
+            document.getElementById("d1").setAttribute("open", ""); /* abrir a caixa de diálogo */
+        }
+        function fecharDialog(){
+            document.getElementById("d1").removeAttribute("open"); /* fechar a caixa de diálogo */
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--
+        
+    -->
+    <button onclick="abrirDialog()">Abrir</button>
+    <button onclick="fecharDialog()">Fechar</button>
+    <dialog id="d1" open>
+        <p>
+            O campo de batalha cheira a morte
+            (cheira à morte, cheira à morte)
+        </p>
+    </dialog>
+
+
+</body>
+
+</html>
