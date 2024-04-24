@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div1</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        *{
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            border: 1px dotted #f00;
+            margin: auto;
+            width: 960px;
+        }
+        #cabeçalho, #corpo, #rodape{
+          border: 1px dotted #aaa;  
+        }
+        #cabeçalho{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100px;
+
+        }
+        #corpo{
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 100%;
+            height: 550px;
+        }
+        #rodape{
+            position: absolute;
+            top: 650px;
+            left: 0px;
+            width: 100%;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="cabeçalho">
+        <div class="main">
+            <h2>Escalação de hoje - 24/04/2024</h2>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div class="main">
+            <h4>Técnico</h4>
+            <p>Tite</p>
+        </div>
+        <div class="escalacao">
+            <h4>Escalação</h4>
+        </div>
+        <div class="elenco">
+            <p>Rossi</p>
+            <p>Varela</p>
+            <p>Fabricio Bruno</p>
+            <p>Léo Ortiz</p>
+            <p>Viña</p>
+            <p>Igor Jesus</p>
+            <p>Gerson</p>
+            <p>Vitor Hugo</p>
+            <p>Lorran</p>
+            <p>Mateus Gonçalves</p>
+            <p>Bruno Henrique</p>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <div class="main">
+            <h3>Placar</h3>
+            <p>FLA 2 x 0 Bolívar</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
