@@ -1,0 +1,57 @@
+.quebra_linha{
+    display: block;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+#f_cima{
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #eee;
+}
+
+
+#f_meio{
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #747373;
+    margin-top: 15px;
+    color: #fff;
+}
+
+
+
+#f_baixo{
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f5c6d9;
+    margin-top: 15px;
+    color: #0f0c1a;
+}
+
+#dv_btns{
+    display: flex;
+    margin-top: 10px;
+}
+#dv_radio{
+    margin-top: 10px;
+}
+#dv_check{
+    margin-top: 10px;
+}
+#dv_hora{
+    margin-top: 10px;
+}
+#div_hora{
+    margin-top: 5px;
+}
+#input_relato{
+    display: block;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    width: 80%;
+    height: 400px;
+    border-radius: 15px;
+}

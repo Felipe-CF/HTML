@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>formulario 2</title>
+</head>
+
+<body>
+    <!--
+        list
+        lista suspensa
+        fieldset
+        agrupar conjuntos
+
+    -->
+
+    <div id="f_meio">
+        <form name="f_select" action="#" method="get" >
+           <div id="quebra_linha">
+               <input list="f_cores" name="f_cor">
+               <datalist id="f_cores">
+                <option value="pre">Preto</option>
+                <option value="bra">Branco</option>
+                <option value="verm">Vermelho</option>
+                <option value="verd">Verde</option>
+                <option value="az">Azul</option>
+               </datalist>
+           </div>
+           <div id="dv_hora">
+            <input type="submit" name="f_enviar" value="Enviar">
+           </div>
+        </form>
+    </div>
+
+    <div id="f_meio">
+        <form name="f_cadastro" action="#" method="get">
+            <label for="">Nome:</label>
+            <input class="quebra_linha" type="text" name="f_nome" name="f_username" maxlength="20" size="20">
+          
+            <div id="dv_radio">
+                <label id class="quebra_linha">Possui carro?</label>
+                <input type="radio" name="f_carro" value="s">Sim
+                <input type="radio" name="f_carro" value="n">Não
+            </div>
+
+            <div id="dv_hora">
+                <input type="submit" name="f_enviar" value="Enviar">
+            </div>
+            
+        </form>
+    </div>
+
+    <div id="f_baixo">
+        <form name="f_cadastro" action="#" method="get">
+            <label for="">Nos Conte Seu Relato</label>
+            <input id="input_relato" type="text" name="f_nome" name="f_username" maxlength="400" size="400"> 
+            <div id="dv_radio">
+                <label class="quebra_linha">Você os Termos de Responsabilidade do DAMA?</label>
+                <input type="radio" name="f_carro" value="s">Sim
+                <input type="radio" name="f_carro" value="n">Não
+            </div>
+            <div id="dv_btns">
+                <input class="quebra_linha" type ="submit" name="f_btn_enviar" value="Publicar">
+                <input class="quebra_linha" type ="reset" name="f_btn_limpar" value="Limpar">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

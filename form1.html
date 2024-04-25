@@ -3,54 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
     <title>formulário1</title>
-    <style>
-        .quebra_linha{
-            display: block;
-            margin-bottom: 2px;
-            margin-right: 2px;
-        }
-        #f_cima{
-            border: 1px solid #000;
-            padding: 10px;
-            border-radius: 15px;
-            background-color: #eee;
-        }
-
-        #f_baixo{
-            border: 1px solid #000;
-            padding: 10px;
-            border-radius: 15px;
-            background-color: #f5c6d9;
-            margin-top: 15px;
-            color: #0f0c1a;
-        }
-
-        #dv_btns{
-            display: flex;
-            margin-top: 10px;
-        }
-        #dv_radio{
-            margin-top: 10px;
-        }
-        #dv_check{
-            margin-top: 10px;
-        }
-        #dv_hora{
-            margin-top: 10px;
-        }
-        #div_hora{
-            margin-top: 5px;
-        }
-        #input_relato{
-            display: block;
-            margin-bottom: 2px;
-            margin-right: 2px;
-            width: 80%;
-            height: 400px;
-            border-radius: 15px;
-        }
-    </style>
 </head>
 
 <body>
@@ -69,7 +23,12 @@
         maxlength:quantidade maximas de caracteres
         checked: booleano para marcar o botão
         
-        input & label: inline
+
+
+        ---------------------------- input & label   ----------------------------
+        DISPLAYS: inline
+
+        TYPES
         button: criar um script para seu funcionamento
         radio: marcação exclusiva
         check-box: varias alternativas
@@ -79,18 +38,34 @@
         date:
         time:
         datetime-local:
+        hidden: p/ fazer passagem de valores 
+        color: selecionar cor
+        email: texto tipo imagem
+        imagem: inserir imagem (botão de submit)
+        tel: telefone
+        number: numeral
+        search: pesquisa
+        file: upa arquivos / accept=".jpg, .gif, .png" (filtro)
+        url:
+
+        placeholder="" pattern=""  (padrões)
 
         QUANDO USAR GET E POST
         get: mais rápido (passagem explicita)
         post: formulário de cadastro (passagem implicita), em informações privadas
         required: obrigatorio
+
+
+        ---------------------------- select & option  ----------------------------
+        menu suspenso
     -->
+
     <div id="f_cima">
         <form name="f_cadastro" action="#" method="get">
             <label for="">Nome:</label>
             <input class="quebra_linha" type="text" name="f_nome" name="f_username" maxlength="20" size="20">
             <label for="">Senha:</label>
-            <input class="quebra_linha" type="password" name="f_senha" maxlength="10">
+            <input class="quebra_linha" type="password" name="f_senha" maxlength="10" pattern="[a-zA-Z0-9]">
             
             <div id="dv_check">
                 <label class="quebra_linha" for="">Tipo de usuário</label>
@@ -119,9 +94,80 @@
                     <input type="datetime-local" name="f_datelocal" >
                 </div>
  
- 
             </div>
             
+        </form>
+    </div>
+
+    <div id="f_meio">
+        <form name="f_data" action="#" method="get">
+            <label class="quebra_linha">Semana:</label>
+            <input type="week" name="f_semana">
+            <label class="quebra_linha">Mes:</label>
+            <input type="month" name="f_mes">
+            <input type="hidden" name="canal" id="" value="cfbcursos">
+            <input type="hidden" name="curso" id="" value="html5">
+            <div id="dv_hora">
+                <input type="submit" name="f_enviar" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
+    <div id="f_meio">
+        <form name="f_data" action="#" method="get">
+            <label class="quebra_linha">Selecione uma cor:</label>
+            <input type="color" name="f_cor">
+            <label class="quebra_linha">Digite seu email:</label>
+            <input type="email" name="f_email">
+            <div id="dv_hora">
+                <input class="quebra_linha" type="image" name="f_imagem" src="manto.jpg">
+            </div>
+        </form>
+    </div>
+
+    <div id="f_meio">
+        <form name="f_data" action="#" method="get">
+            <label class="quebra_linha">Telefone:</label>
+            <input type="tel" name="f_tel" pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" placeholder="xx 9xxxx-xxxx">
+            
+            <label class="quebra_linha">Numero:</label>
+            <input type="number" name="f_numero" step="2" min="0" max="10">
+
+            <label class="quebra_linha">Pesquisa:</label>
+            <input type="search" name="f_pesquisa">
+            <div id="dv_hora">
+                <input class="quebra_linha" type="image" name="f_imagem" src="manto.jpg">
+            </div>
+        </form>
+    </div>
+
+    <div id="f_meio">
+        <form name="f_file_url" action="#" method="get" enctype="multipart/form-data">
+            <label class="quebra_linha">Selecione arquivo:</label>
+            <input type="file" name="f_arquivo" multiple accept=".jpg, .gif, .png">
+            
+            <label class="quebra_linha">Selecione url:</label>
+            <input type="url" name="f_url" placeholder="" pattern="">
+
+
+        </form>
+    </div>
+
+    <div id="f_meio">
+        <form name="f_select" action="#" method="get" >
+           <div id="quebra_linha">
+               <select name="f_cor" multiple>
+                   <option value="pre">Preto</option>
+                   <option value="bra">Branco</option>
+                   <option value="verm">Vermelho</option>
+                   <option value="verd">Verde</option>
+                   <option value="az">Azul</option>
+               </select>
+           </div>
+           <div id="dv_hora">
+            <input type="submit" name="f_enviar" value="Enviar">
+           </div>
         </form>
     </div>
 
