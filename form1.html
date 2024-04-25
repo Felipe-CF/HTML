@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário1</title>
+    <style>
+        .quebra_linha{
+            display: block;
+            margin-bottom: 2px;
+            margin-right: 2px;
+        }
+        #f_cima{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+
+        #f_baixo{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #f5c6d9;
+            margin-top: 15px;
+            color: #0f0c1a;
+        }
+
+        #dv_btns{
+            display: flex;
+            margin-top: 10px;
+        }
+        #dv_radio{
+            margin-top: 10px;
+        }
+        #dv_check{
+            margin-top: 10px;
+        }
+        #dv_hora{
+            margin-top: 10px;
+        }
+        #div_hora{
+            margin-top: 5px;
+        }
+        #input_relato{
+            display: block;
+            margin-bottom: 2px;
+            margin-right: 2px;
+            width: 80%;
+            height: 400px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        coleçãp de elementos
+        container
+        
+        action: url com o arquivo  que irá receber os dados enviados
+        autocomplete: autocompletar campos ativados
+        enctype: condificação (tipo) dos dados enviados
+        method: metodo de envio dos dados (get ou post)
+        name: nome do formulário 
+        novalidade:desabilita a validação do browser
+        target: como a página de destino (action) será aberta
+        size: tamanho do campo
+        maxlength:quantidade maximas de caracteres
+        checked: booleano para marcar o botão
+        
+        input & label: inline
+        button: criar um script para seu funcionamento
+        radio: marcação exclusiva
+        check-box: varias alternativas
+        submit: submeter
+        text: texto
+        reset
+        date:
+        time:
+        datetime-local:
+
+        QUANDO USAR GET E POST
+        get: mais rápido (passagem explicita)
+        post: formulário de cadastro (passagem implicita), em informações privadas
+        required: obrigatorio
+    -->
+    <div id="f_cima">
+        <form name="f_cadastro" action="#" method="get">
+            <label for="">Nome:</label>
+            <input class="quebra_linha" type="text" name="f_nome" name="f_username" maxlength="20" size="20">
+            <label for="">Senha:</label>
+            <input class="quebra_linha" type="password" name="f_senha" maxlength="10">
+            
+            <div id="dv_check">
+                <label class="quebra_linha" for="">Tipo de usuário</label>
+                <input type="checkbox" name="f_caixa_usuario" value="integrante">Integrante
+                <input type="checkbox" name="f_caixa_usuario" value="profissional">Profissional
+                <input type="checkbox" name="f_caixa_usuario" value="ong">ONG
+            </div>
+            
+            <div id="dv_radio">
+                <label id class="quebra_linha">Possui carro?</label>
+                <input type="radio" name="f_carro" value="s">Sim
+                <input type="radio" name="f_carro" value="n">Não
+            </div>
+
+            <div id="dv_hora">
+                <div>
+                    <label id >Data:</label>
+                    <input type="date" name="f_data" min="1900-01-01" max="1997-09-12">
+                </div>
+                <div id="div_hora">
+                    <label id >Hora:</label>
+                    <input type="time" name="f_hora" min="08:00" max="18:00">
+                </div>
+                <div id="div_hora">
+                    <label id >Hora Local:</label>
+                    <input type="datetime-local" name="f_datelocal" >
+                </div>
+ 
+ 
+            </div>
+            
+        </form>
+    </div>
+
+    <div id="f_baixo">
+        <form name="f_cadastro" action="#" method="get">
+            <label for="">Nos Conte Seu Relato</label>
+            <input id="input_relato" type="text" name="f_nome" name="f_username" maxlength="400" size="400"> 
+            <div id="dv_radio">
+                <label class="quebra_linha">Você os Termos de Responsabilidade do DAMA?</label>
+                <input type="radio" name="f_carro" value="s">Sim
+                <input type="radio" name="f_carro" value="n">Não
+            </div>
+            <div id="dv_btns">
+                <input class="quebra_linha" type ="submit" name="f_btn_enviar" value="Publicar">
+                <input class="quebra_linha" type ="reset" name="f_btn_limpar" value="Limpar">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

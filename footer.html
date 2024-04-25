@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rodapé</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .rodape_pagina{
+            border: 1px solid #f00;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .article_rod{
+            border: 1px solid #fff;
+            width: 33.33%;
+            margin: 2px;
+            
+        }
+        .img_rod{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        rodapé do contexto onde o footer está inserido
+    -->
+    <div id="header">
+        <h1>cabeçalho</h1>
+    </div>
+    <article>
+        <p>corpo do documento da pagina</p>
+        <footer>
+            <a href="https://www.flamengo.com.br/">Site</a>
+        </footer>
+    </article>
+    <footer class="rodape_pagina">
+        <article class="article_rod">
+            <img src="manto.jpg" alt="" class="img_rod">
+        </article>
+        <article class="article_rod">
+            <p>CFB Cursos, canal do youtube com cursos de informatica avançada</p>
+        </article>
+        <article class="article_rod">
+            <p>www.youtube.com//cfbcursos</p>
+        </article>
+        
+    </footer>
+</body>
+</html>
