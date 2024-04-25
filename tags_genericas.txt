@@ -1,0 +1,3 @@
+b - negrito
+i - italico
+em - enfase (um dentro do outro)
