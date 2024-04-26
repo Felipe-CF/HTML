@@ -11,12 +11,19 @@
     <!--
         list
         lista suspensa
-        fieldset
+
+        fieldset - block
         agrupar conjuntos
+
+        textarea
+        autofocus (boolean)
+        blocos de textos maiores
+
 
     -->
 
     <div id="f_meio">
+        <p>datalist</p>
         <form name="f_select" action="#" method="get" >
            <div id="quebra_linha">
                <input list="f_cores" name="f_cor">
@@ -36,38 +43,44 @@
 
     <div id="f_meio">
         <form name="f_cadastro" action="#" method="get">
-            <label for="">Nome:</label>
-            <input class="quebra_linha" type="text" name="f_nome" name="f_username" maxlength="20" size="20">
-          
-            <div id="dv_radio">
+            <p>fieldset</p>
+            <fieldset>
+                <legend>Dados 1</legend>
+                <label for="">Nome:</label>
+                <input class="quebra_linha" type="text" name="f_nome" name="f_username" maxlength="20" size="20">
+                <label class="quebra_linha">Telefone:</label>
+                <input type="tel" name="f_tel" pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" placeholder="xx 9xxxx-xxxx">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados 2</legend>
                 <label id class="quebra_linha">Possui carro?</label>
                 <input type="radio" name="f_carro" value="s">Sim
                 <input type="radio" name="f_carro" value="n">Não
-            </div>
+                <label id class="quebra_linha">Possui casa?</label>
+                <input type="radio" name="f_casa" value="s">Sim
+                <input type="radio" name="f_casa" value="n">Não
+            </fieldset>
 
             <div id="dv_hora">
                 <input type="submit" name="f_enviar" value="Enviar">
             </div>
-            
         </form>
     </div>
 
     <div id="f_baixo">
-        <form name="f_cadastro" action="#" method="get">
-            <label for="">Nos Conte Seu Relato</label>
-            <input id="input_relato" type="text" name="f_nome" name="f_username" maxlength="400" size="400"> 
-            <div id="dv_radio">
-                <label class="quebra_linha">Você os Termos de Responsabilidade do DAMA?</label>
-                <input type="radio" name="f_carro" value="s">Sim
-                <input type="radio" name="f_carro" value="n">Não
-            </div>
-            <div id="dv_btns">
-                <input class="quebra_linha" type ="submit" name="f_btn_enviar" value="Publicar">
-                <input class="quebra_linha" type ="reset" name="f_btn_limpar" value="Limpar">
-            </div>
+        <p>textarea</p>
+        <form name="f_select" action="#" method="get" >
+           <div id="quebra_linha">
+               <textarea name="f_texto" id="" cols="30" rows="10">
+                CFBCursos
+               </textarea>
+           </div>
+           <div id="dv_hora">
+            <input type="submit" name="f_enviar" value="Enviar">
+           </div>
         </form>
     </div>
-
 
 </body>
 
