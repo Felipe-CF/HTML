@@ -1,3 +1,16 @@
 b - negrito
 i - italico
 em - enfase (um dentro do outro)
+
+ruby - mostrar pronuncia/significado/tradução de caracteres
+rt - anotação do ruby
+    <ruby>BASE<rt>anotação</ruby>
+
+samp - mostra um exemplo, saída do codigo
+    <ruby>BASE<rt>anotação</ruby>
+
+small - destaque diminuindo pequenos textos
+inline
+    <small>texto</small>
+
+

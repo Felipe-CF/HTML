@@ -1,0 +1,82 @@
+<!DOCTYoptionE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>seções</title>
+    <style>
+        #img1{
+            width: 400px;
+            height: 600px;
+        }
+        #img2{
+            width: 200px;
+            height: 400px;
+        }
+        #s1{
+            border: 2px solid #eee;
+            background-color: #aaa;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        #s2{
+            border: 2px solid #eee;
+            background-color: #bbb;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: flex;
+        }
+        #s3{
+            border: 2px solid #ccc;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        block
+        seção generica, agrupamento de conteudo (parece com article)
+        "geralmente" não se usa um article dentro de um section
+        tem um caractere que define, identific ao conteudo
+        normalmente, se divide um article em sections
+
+    -->
+    <section id="s1">
+        <h1>Escudo do Flamengo</h1>
+        <img id="img1" src="fla.png" alt="">
+    </section>
+
+    <section id="s2">
+        <h1>Musicas do Flamengo</h1>
+        <section>
+            <p>
+                Em dezembro de 81... botou os ingleses na roda, 3x0 no Liverpool, ficou marcado na história
+                E no rio não tem outro igual, só o FLamengo é campeão mundial.
+            </p>
+        </section>
+        <section>
+            <p>
+                Ó, meu mengão
+                Eu gosto de você
+            </p>
+        </section>
+        <section>
+            <p>
+                E ninguém cala, ese chororo
+                Chora presidente, chora o time todo
+                Chora o torcedor
+            </p>
+        </section>
+    </section>
+
+    <section id="s3">
+        <h1>Camisa do Flamengo</h1>
+        <img id="img2" src="manto.jpg" alt="">
+    </section>
+    
+</body>
+
+</html>
