@@ -54,7 +54,7 @@ section, footer{/*odd=impar even=par */
 .banner{
     display: flex;
     background-color: rgba(247, 72, 87);
-    text-align: center;
+    align-items: center;
 }
 
 .banner img{
