@@ -13,7 +13,7 @@ header{
     padding: 15px 0px 15px 0px;
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 17, 0, 0.733);
+    background-color: rgba(247, 72, 87);
 }
 
 header nav ul{
@@ -37,7 +37,7 @@ header nav ul li a{
 
 header nav ul li a:hover{
     font-weight: bolder;
-    color: #000;
+    color: rgb(16, 171, 227);
 }
 
 section{
@@ -47,9 +47,47 @@ section{
 }
 
 section, footer{/*odd=impar even=par */
-    padding-top: 60px;
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
 .banner{
     display: flex;
+    background-color: rgba(247, 72, 87);
+    text-align: center;
 }
+
+.banner img{
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgba(247, 72, 87);
+    border-radius: 10px;
+}
+
+/* separação visual */
+.borda0{
+    border: none;
+    
+}
+.borda1{
+    border: 1px solid #000;
+}
+.borda2{
+    border: 1px solid #f00;
+}
+/* separação visual */
+
+/* container flex  */
+.flexivel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+article{
+    width: 100%;
+}
+
