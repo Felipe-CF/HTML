@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="full_page1.css">
-    <script type="text/javascript" crs="scripts.js"></script>
-    
+        
     <title>full pag 1</title>
 </head>
 
@@ -13,7 +12,7 @@
     <!--
         menu superior travado no topo
     -->
-    <header>
+    <header class="header">
         <nav>
             <ul>
                 <li><a href="#banner">Home</a></li>
@@ -25,54 +24,59 @@
     </header>
 
     <section id="banner" class="banner">
-        <img src="tormenta20-2.webp" alt="">
+        
     </section>
 
     <section id="sobre" class="flexivel">
-        <article class="borda1">
-            sobre tormenta
+        <article class="borda1" data-anima="esquerda">
+            <header>sobre tormenta</header>
         </article>
-        <article class="borda1">
-            sobre comunidade
+        <article class="borda1" data-anima="direita">
+            <header>sobre a comunidade</header>
+        </article>
+    </section>
+
+    <!--
+        efeito parallax
+    -->
+    <section class="parallax p1">
+        <article>
+            parallax
         </article>
     </section>
 
     <section id="velhosdeuses" class="flexivel">
-        <h2>
-            velhosdeuses
-        </h2>
-        <article class="borda1">
-            Keen
+        <article class="borda1" data-anima="esquerda">
+            <header>keen</header>
         </article >
-        <article class="borda1">
-            Tauron
+        <article class="borda1" data-anima="centro">
+            <header>Tauron</header>
         </article>
-        <article class="borda1">
-            Ragnar
+        <article class="borda1" data-anima="direita">
+            <header>Ragnar</header>
         </article>
     </section>
 
     <section id="novosdeuses" class="flexivel">
-        <h2>
-            novosdeuses
-        </h2>
-        <article class="borda2">
-            Arsenal
+        <article class="borda1" data-anima="esquerda">
+            <header>Arsenal</header>
         </article>
-        <article class="borda2">
-            Valkarya
+        <article class="borda1" data-anima="centro">
+            <header>Valkarya</header>            
         </article>
-        <article class="borda2">
-            Thwor
+        <article class="borda1" data-anima="centro">
+            <header>Thwor</header>
         </article>
-        <article class="borda2">
-            Aharadak
+        <article class="borda1" data-anima="direita">
+            <header>Aharadak</header>
         </article>
     </section>
 
     <footer>
 
     </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+
 </body>
 
 </html>
