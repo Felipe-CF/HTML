@@ -2,8 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background-color: rgba(221, 48, 44);
-    /* não mostra a barra horizontal*/
+        /* não mostra a barra horizontal*/
     overflow-x: hidden;
 }
 html{
@@ -132,7 +131,7 @@ footer{
 /* PARALLAX 
     camadas
 */
-.parallax{
+/* .parallax{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -144,4 +143,31 @@ footer{
 }
 .p2{
     background-image: url('01\ -\ Aharadak.jpg');
+} */
+.articleDeuses{
+    justify-content: center;
+    align-items: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
+.arsenal{
+ margin-top: 65px;
+ cursor: pointer;  
+}
+
+/* modal */
+
+.janelaModal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+

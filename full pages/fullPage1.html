@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    
+    
     <link rel="stylesheet" type="text/css" href="full_page1.css">
         
     <title>full pag 1</title>
@@ -39,15 +46,16 @@
     <!--
         efeito parallax
     -->
-    <section class="parallax p1">
+    <!-- <section class="parallax p1">
         <article>
             parallax
         </article>
-    </section>
+    </section> -->
 
     <section id="velhosdeuses" class="flexivel">
         <article class="borda1" data-anima="esquerda">
             <header>keen</header>
+            <section><img src="keen.webp" alt=""></section>
         </article >
         <article class="borda1" data-anima="centro">
             <header>Tauron</header>
@@ -58,23 +66,32 @@
     </section>
 
     <section id="novosdeuses" class="flexivel">
-        <article class="borda1" data-anima="esquerda">
-            <header>Arsenal</header>
+        <article class="borda1 articleDeuses" data-anima="esquerda">
+            <header class="borda0">Arsenal</header>
+            <img class="arsenal" src="arsenal-removebg-preview.png" alt="imagem de arsenal" onclick="">
         </article>
-        <article class="borda1" data-anima="centro">
-            <header>Valkarya</header>            
+        <article class="borda1 articleDeuses" data-anima="centro">
+            <header class="borda1">Valkarya</header>            
         </article>
-        <article class="borda1" data-anima="centro">
-            <header>Thwor</header>
+        <article class="borda1 articleDeuses" data-anima="centro">
+            <header class="borda1">Thwor</header>
         </article>
-        <article class="borda1" data-anima="direita">
-            <header>Aharadak</header>
+        <article class="borda1 articleDeuses" data-anima="direita">
+            <header class="borda1">Aharadak</header>
         </article>
     </section>
 
     <footer>
-
     </footer>
+
+    <div id="janelaModal" class="janelaModal">
+        <span id="btnFechar" class="fecharModal">X</span>
+        <img id="imgModal" class="imgModal" src="" alt="">
+        <div id="txtModal" class="txtModal">
+            <p></p>
+        </div>
+    </div>
+
     <script type="text/javascript" src="scripts.js"></script>
 
 </body>
