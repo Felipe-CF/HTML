@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
-    
     
     <link rel="stylesheet" type="text/css" href="full_page1.css">
         
@@ -24,7 +22,7 @@
             <ul>
                 <li><a href="#banner">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#velhosdeuses">Divindades Antigas</a></li>
+                <!-- <li><a href="#velhosdeuses">Divindades Antigas</a></li> -->
                 <li><a href="#novosdeuses">Divindades Novas</a></li>
             </ul>
         </nav>
@@ -43,52 +41,103 @@
         </article>
     </section>
 
-    <!--
-        efeito parallax
-    -->
-    <!-- <section class="parallax p1">
-        <article>
-            parallax
+    <!-- <section id="velhosdeuses" class="flexivel ">
+        <article class="borda0 velhosdeuses" data-anima="esquerda">
+            <header class="borda0">keen</header>
+            <img src="Keenn1.png" alt="">
+        </article >
+        <article class="borda0 velhosdeuses" data-anima="centro">
+            <header class="borda0">Tauron</header>
+            <img src="Tauron1.png" alt="">
+        </article>
+        <article class="borda0 velhosdeuses" data-anima="direita">
+            <header class="borda0">Ragnar</header>
+            <img src="Ragnar1.png" alt="">
         </article>
     </section> -->
 
-    <section id="velhosdeuses" class="flexivel">
-        <article class="borda1" data-anima="esquerda">
-            <header>keen</header>
-            <section><img src="keen.webp" alt=""></section>
-        </article >
-        <article class="borda1" data-anima="centro">
-            <header>Tauron</header>
-        </article>
-        <article class="borda1" data-anima="direita">
-            <header>Ragnar</header>
-        </article>
-    </section>
-
     <section id="novosdeuses" class="flexivel">
-        <article class="borda1 articleDeuses" data-anima="esquerda">
+        <article class="borda0 articleDeuses" data-anima="esquerda">
             <header class="borda0">Arsenal</header>
-            <img class="arsenal" src="arsenal-removebg-preview.png" alt="imagem de arsenal" onclick="">
+            <img class="arsenal" src="arsenal-removebg-preview.png" alt="imagem de arsenal" onclick="cliqueModal(0, this)">
         </article>
-        <article class="borda1 articleDeuses" data-anima="centro">
-            <header class="borda1">Valkarya</header>            
+        <article class="borda0 articleDeuses" data-anima="centro">
+            <header class="borda0">Valkarya</header>
+            <img class="aharadak" src="v1.png" alt="imagem de valkarya" onclick="cliqueModal(1, this)">            
         </article>
-        <article class="borda1 articleDeuses" data-anima="centro">
-            <header class="borda1">Thwor</header>
+        <article class="borda0 articleDeuses" data-anima="centro">
+            <header class="borda0">Thwor</header>
+            <img class="aharadak" src="thwor1.png" alt="imagem de thwor" onclick="cliqueModal(2, this)">
         </article>
-        <article class="borda1 articleDeuses" data-anima="direita">
-            <header class="borda1">Aharadak</header>
+        <article class="borda0 articleDeuses" data-anima="direita">
+            <header class="borda0">Aharadak</header>
+            <img class="aharadak" src="aharadak1.png" alt="imagem de aharadak" onclick="cliqueModal(3, this)">
         </article>
     </section>
 
-    <footer>
+    <footer class="rodape">
+        
     </footer>
 
-    <div id="janelaModal" class="janelaModal">
-        <span id="btnFechar" class="fecharModal">X</span>
-        <img id="imgModal" class="imgModal" src="" alt="">
-        <div id="txtModal" class="txtModal">
-            <p></p>
+    <div id="aModal" class="janelaModal escondeJanelaModal borda0">
+        <span id="aFechar" class="fecharModal borda0">X</span>
+        <div class="displayModal">
+            <div class="imgModal borda0">
+                <img id="aImg" src="" alt="">
+            </div>
+            <div id="aTxt" class="txtModal borda0">
+                <p>Outrora um infame clérigo guerreiro, o vilão conhecido apenas como Mestre Arsenal se tornou sumo-sacerdote do violento deus Keenn. 
+                    No entanto, após uma longa campanha que envolveu a conquista da mais poderosa espada mágica de Arton, o clérigo derrotou seu próprio patrono em combate durante um torneio épico, ascendendo ao Panteão como o novo Deus da Guerra. 
+                    Com o objetivo de tornar Arton mais forte, capaz de confrontar qualquer inimigo, Arsenal e seus devotos seguem deflagrando conflitos por todo o Reinado e além.                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="vModal" class="janelaModal escondeJanelaModal borda0">
+        <span id="vFechar" class="fecharModal borda0">X</span>
+        <div class="displayModal">
+            <div class="imgModal borda0">
+                <img id="vImg" src="" alt="">
+            </div>
+            <div id="vTxt" class="txtModal borda0">
+                <p>A Deusa da Ambição sempre foi a mais ousada entre os seus. Ajudaria a criar os lefeu, a própria Tormenta. 
+                    Criaria os seres humanos, povo mais impetuoso e beligerante de todos. Acabaria condenada ao cativeiro, até ser resgatada por seus próprios protegidos, elevando ainda mais sua glória (ou teria assim planejado desde o início?). 
+                    Mas, quando Mestre Arsenal derrotou Keenn para tomar seu lugar como Deus da Guerra, o maior objetivo da Deusa da Ambição foi enfim alcançado: um humano superou um deus. 
+                    Esse evento, e também a morte do antigo líder, o Deus da Força, levou os deuses a reconhecerem-na como a nova liderança do Panteão.                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="tModal" class="janelaModal escondeJanelaModal borda0">
+        <span id="tFechar" class="fecharModal borda0">X</span>
+        <div class="displayModal">
+            <div class="imgModal borda0">
+                <img id="tImg" src="" alt="">
+            </div>
+            <div id="tTxt" class="txtModal borda0">
+                <p>A Flecha de Fogo foi disparada, rompendo o coração das trevas. 
+                    A antiga profecia foi cumprida. 
+                    No entanto, o que muitos pensavam significar o fim da Aliança Negra dos goblinoides resultou em algo totalmente diferente, totalmente novo. 
+                    Ao enfrentar e derrotar o próprio Deus da Morte, o imperador bugbear Thwor Khoshkothruk ascendeu ao Panteão como o Deus dos Goblinoides. 
+                    Agora protegidos e governados por uma poderosa divindade, os povos duyshidakk erguem sua própria civilização no continente de Lamnor, e o Reinado de Arton deverá lidar com o futuro que surgir disso.                
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ahModal" class="janelaModal escondeJanelaModal borda0">
+        <span id="ahFechar" class="fecharModal borda0">X</span>
+        <div class="displayModal">
+            <div class="imgModal borda0">
+                <img id="ahImg" src="" alt="">
+            </div>
+            <div id="ahTxt" class="txtModal borda0">
+                <p>Outrora um dos terríveis Lordes da Tormenta, esta aberração monstruosa ambicionava o grande poder divino oferecido pelos devotos de Arton. 
+                    Após anos liderando seu próprio culto profano, ele matou o Deus da Força, e ascendeu como o novo e macabro Deus da Tormenta. 
+                    Agora ocupando uma posição importante no Panteão, os invasores lefeu avançam mais uma etapa em seus planos para corromper Arton. 
+                    Apenas os devotos mais depravados ousam cultuar esta divindade de escatologia e sadismo.                
+                </p>
+            </div>
         </div>
     </div>
 

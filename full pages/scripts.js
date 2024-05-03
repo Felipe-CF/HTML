@@ -24,3 +24,36 @@ if(elementos.length){ // se existir elementos para animar
         animaScroll();
     })
 }
+
+
+const deuses = [
+    ["aModal", "aImg", "aTxt", "arsenal-art.png", "aFechar"], 
+    ["vModal", "vImg", "vTxt", "valkarya-art.png", "vFechar"],
+    ["tModal", "tImg", "tTxt", "thwor-art.png", "tFechar"],
+    ["ahModal", "ahImg", "ahTxt", "aharadak-art.png", "ahFechar"]
+
+]
+
+function cliqueModal(id, img){
+     let deus = deuses[id]
+    const janelaModal = document.getElementById(deus[0]);
+    const txtModal = document.getElementById(deus[2]);
+    const imgModal = document.getElementById(deus[1])
+    const btnFechar = document.getElementById(deus[4]);
+    // let deus = deuses[0]
+    // const janelaModal = document.getElementById('janelaModal');
+    // const txtModal = document.getElementById("txtModal");
+    // const imgModal = document.getElementById("imgModal")
+    // const btnFechar = document.getElementById('btnFechar');
+    
+    imgModal.src=deus[3];
+    imgModal.alt=img.alt
+
+    janelaModal.classList.remove('escondeJanelaModal');
+    janelaModal.classList.add('mostraJanelaModal');
+    
+    btnFechar.onclick=function(){
+        janelaModal.classList.remove('mostraJanelaModal');
+        janelaModal.classList.add('escondeJanelaModal');
+    }
+}
