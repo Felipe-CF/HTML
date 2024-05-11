@@ -57,3 +57,12 @@ function cliqueModal(id, img){
         janelaModal.classList.add('escondeJanelaModal');
     }
 }
+
+
+function divindade(){
+    var nome = prompt("Qual o nome da divindade?");
+    var deuses = document.getElementById("novosdeuses");
+    deuses = deuses.getElementsByTagName("a");
+    deuses.click();
+
+}
