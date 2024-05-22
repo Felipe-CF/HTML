@@ -40,11 +40,6 @@ function cliqueModal(id, img){
     const txtModal = document.getElementById(deus[2]);
     const imgModal = document.getElementById(deus[1])
     const btnFechar = document.getElementById(deus[4]);
-    // let deus = deuses[0]
-    // const janelaModal = document.getElementById('janelaModal');
-    // const txtModal = document.getElementById("txtModal");
-    // const imgModal = document.getElementById("imgModal")
-    // const btnFechar = document.getElementById('btnFechar');
     
     imgModal.src=deus[3];
     imgModal.alt=img.alt

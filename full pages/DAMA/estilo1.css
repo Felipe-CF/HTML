@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+        /* não mostra a barra horizontal*/
+    overflow-x: hidden;
+}
+
+/* separação visual */
+.borda0{border: none;}
+.borda1{border: 1px solid #000;}
+.borda2{border: 1px solid #f00;}
+/* separação visual */
+
+.header{
+    height: 10%;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+}
+
+.main{
+    height: 60%;
+}
+
+.footer{
+    height: 20%;
+}
+
+.header-nav{
+    width: 60%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px 0px 5px;
+}
+
+.header-div{
+    width: 20%;
+}
+
+header{
+    padding: 15px 0px 15px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    /* nenhum elemento sobropõe ele */
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+header nav ul li{
+    display: inline;
+
+}
