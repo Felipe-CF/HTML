@@ -2,8 +2,9 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-        /* não mostra a barra horizontal*/
-    overflow-x: hidden;
+        /* não mostra a barra horizontal overflow-x: hidden;
+        background-color: rgba(243, 236, 230, 0.9);
+        */
 }
 
 /* separação visual */
@@ -13,20 +14,13 @@
 /* separação visual */
 
 .header{
-    height: 10%;
+    height: 70px;
     padding: 5px;
-    position: fixed;
+    /*position: fixed;
+    z-index: 9999; */
     width: 100%;
-    z-index: 9999;
     display: flex;
-}
-
-.main{
-    height: 60%;
-}
-
-.footer{
-    height: 20%;
+    background-color: rgba(243, 236, 230, 0.9);
 }
 
 .header-nav{
@@ -36,28 +30,254 @@
     align-items: center;
     justify-content: center;
     margin: 0px 5px 0px 5px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.header-div{
+.header-div-left{
     width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-header{
-    padding: 15px 0px 15px 0px;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
+.header-div-right{
+    width: 20%;
     display: flex;
-    /* nenhum elemento sobropõe ele */
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
+
+.img-dama{
+    width: 80%;
+    height: 100%;
+}
+
+.header-div button{
+    padding: 5px;
+    margin: 5px;
+}
+
+.button-header {
+    background-color: rgba(255, 127, 140, 0.9);
+    border: none;
+    padding: 5px 20px;
+    margin: 4px 2px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 60px; /* Completely round edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: none;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-header:hover {
+    background-color: rgba(255, 100, 110, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+.button-header:active {
+    background-color: rgba(255, 100, 110, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.main{
+    height: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-div1{
+    width: 100%;
+    height: 678px;
+    margin-bottom: 5px;
+    background-image: url("banner.jpeg");
+    background-position: left;
+    background-repeat: no-repeat;
+    /*
+    background-attachment: fixed;
+    */
+    background-color: rgba(243, 236, 230,1);
+    background-size: contain;
+    display: inline-block;
+
+}
+
+.main-div1-div-top{
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+    position: top;
+    padding: 3px;
+    margin: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-div1-div-top-divs{
+    width: 100%;
+    max-width: 505px;
+    height: 100%;
+    display: inline;
+    margin: 5px;
+    
+}
+
+.main-div1-div-center{
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+    position: center;
+    padding: 5px;
+    margin: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-div1-div-center-divs{
+    width: 100%;
+    max-width: 335px;
+    height: 100%;
+    display: inline-block;
+    padding-left: 60px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.button-main {
+    background-color: rgba(255, 127, 140, 0.9);
+    border: none;
+    padding: 5px 20px;
+    margin: 4px 2px;
+    
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 60px; /* Completely round edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: none;
+
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-main:hover {
+    background-color: rgba(255, 100, 110, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+.button-main:active {
+    background-color: rgba(255, 100, 110, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.main-div1-div-bottom{
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+    position: bottom; 
+    margin: 3px;
+}
+
+
+
+
+
+.main-div2{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+
+}
+.main-div3{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+
+}
+
+
+.footer{
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* CSS 
+
+.button-21:active,
+.button-21:focus {
+    outline: none;
+}
+
+.button-21:hover {
+    background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+*/
+
+
 
 header nav ul{
     list-style: none;
     text-align: center;
-
 }
 
 header nav ul li{
     display: inline;
-
+    margin-right: 10px;
 }
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header nav ul li a:link, header nav ul li a:visited{
+    color: #000;
+}
+
+header nav ul li a:hover{
+    color: rgba(207, 33, 241, 0.6);
+}
+
+header nav ul li a:active{
+    color: #000;
+}
+
+
