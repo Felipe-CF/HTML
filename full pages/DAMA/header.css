@@ -1,0 +1,110 @@
+header nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header nav ul li a:link, header nav ul li a:visited{
+    color: #000;
+}
+
+header nav ul li a:hover{
+    color: rgba(207, 33, 241, 0.6);
+}
+
+header nav ul li a:active{
+    color: #000;
+}
+
+.header{
+    height: 70px;
+    padding: 5px;
+    /*position: fixed;
+    z-index: 9999; */
+    width: 100%;
+    display: flex;
+    background-color: rgba(244, 235, 230, 0.9);
+   justify-content: space-around;
+}
+
+.header-nav{
+    width: 40%;
+    max-width: 680px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px 0px 5px;
+    font-size: 25px;
+
+    
+}
+
+.header-div-left{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.header-div-right{
+    width: 20%;
+    margin-right: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+
+.img-dama{
+    width: 80%;
+    height: 100%;
+}
+
+.header-div button{
+    padding: 5px;
+    margin: 5px;
+}
+
+.button-header {
+    background-color: rgba(255, 90, 90, 1);
+    border: none;
+    padding: 5px 20px;
+    margin: 4px 2px;
+    height: 45px;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 60px; /* Completely round edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: none;
+
+}
+
+.button-header:hover {
+    background-color: rgba(255, 100, 100, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+.button-header:active {
+    background-color: rgba(255, 100, 110, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
