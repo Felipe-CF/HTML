@@ -1,8 +1,9 @@
 
 #main{
-    height: 1500px;
+    height: 1700px;
+    width: 100%;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 
@@ -10,8 +11,8 @@
 
 .main-div1{
     width: 100%;
-    height: 36%;
-    margin-bottom: 10px;
+    height: 32%;
+    margin-top: 70px;
     background-image: url("banner.jpeg");
     background-position: left;
     background-repeat: no-repeat;
@@ -118,68 +119,70 @@
     margin: 3px;
 }
 
-/*  DIV1    */
+/*  fim DIV1    */
 
 
 /*  DIV2    */
 .main-div2{
     width: 100%;
-    height: 40%;
-    margin-bottom: 5px;
+    height: 36%;
+    padding-top: 60px;
     background-color: rgba(240, 229, 223,1);
     display: block;
 }
 
-.relato-index{
-    
+.main-div2 span{
+    font-size: 30px;
+    color: rgba(165, 55, 154, 1);
+}
+
+.main-div2 h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(165, 55, 154, 1);
+}
+
+.main-div2 p{
+    font-size: 25px;
 }
 
 .section_top-main-div2{
     display: flex;
     height: 50%;
-    
 }
 
 .aside-div2{
     width: 40%;
     height: 100%;
+    padding-top: 12px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+.aside-div2 h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 120px;
+    margin-top: 40px;
 }
 
 #img-aside-div2{
     width: 35%;
     height: auto;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-right: 10PX;
-}
-
-#img-aside-div2-titulo{
-    font-size: 120px;
+    margin-bottom: 10px;
     margin-right: 10px;
+    
 }
 
-.article-div2{
+.article-div2-dama{
     width: 70%;
     height: auto;
     text-align: center;
-    padding: 10px;
-}
-.article-div2 h1{
-    font-size: 50px;
-    margin-bottom: 30px;
+    padding-top: 15px;
 }
 
-.article-div2 p{
-    font-size: 22px;
-}
-.article-div2 span{
-    font-size: 28px;
-}
 #ufmg{
     text-decoration: none;
-
     color: rgba(255, 40, 40, 1);
     transition: color 0.5s;
 }
@@ -188,19 +191,86 @@
     color: rgba(255, 100, 110, 0.2);
 }
 
-
 .section_bottom-main-div2{
     height: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.div2-section_bottom-button-aside{
-    position: relative;
-    float: right;
+.section_bottom-main-div2 article{
+    width: 70%;
+    text-align: left;
+    padding-left: 12px;
+    justify-content: center;
+    align-content: center;
+    
+    /*padding-left: calc(30% + 12px);  30% do tamanho da imagem + 20px de deslocamento + 12px de padding original */
+            
+    background-image: url("circulo.png");
+    background-position: calc(100%);
+    background-size: 33%;
+    background-repeat: no-repeat;
+    
+}
+
+.section_bottom-main-div2 article h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(165, 55, 154, 1);
+}
+
+.section_bottom-main-div2 article p{
+    font-size: 25px;
+}
+
+.section_bottom-main-div2 article span{
+    font-size: 30px;
+}
+
+.section_bottom-main-div2 aside{
     height: 100%;
-    width: 40%;
+    width: 30%;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
 }
 
+.button-main-div2 {
+    background-color: rgba(255, 70, 70, 1);
+    border: none;
+    padding: 10px 5px;
+    
+    width: 280px;
+    height: 53px;
+    
 
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 60px; /* Completely round edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: none;
+
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.button-main-div2:hover {
+    background-color: rgba(255, 100, 100, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+.button-main-div2:active {
+    background-color: rgba(255, 100, 110, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 
 /*  DIV2    */
@@ -209,10 +279,33 @@
 /*  DIV3    */
 .main-div3{
     width: 100%;
-    height: 20%;
+    height: 36%;
     margin-bottom: 5px;
     background-color: rgba(244, 235, 230, 0.9);
+    display: inline-block;
+    text-align: center;
+    padding-top: 65px;
 }
+.main-div3 h1{
+    font-size: 50px;
+    color: rgba(165, 55, 154, 1);
+}
+.main-div3 section {
+    display: flex; /* Use flexbox para layout responsivo */
+    justify-content: space-around; /* Distribui os itens igualmente ao longo do eixo principal */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.main-div3 img {
+    width: 25%;
+    height: 100%; /* Mantém a proporção da imagem */
+    border-radius: 3%; /* Arredonda a imagem */
+}
+
+
+
+
+
 /*  DIV3    */
 
 

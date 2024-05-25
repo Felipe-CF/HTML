@@ -1,3 +1,15 @@
+
+body{
+    overflow-x: hidden;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    /*
+    suave
+    */
+}
 header nav ul{
     list-style: none;
     text-align: center;
@@ -10,6 +22,7 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
+    font-size: 30px;
 }
 
 header nav ul li a:link, header nav ul li a:visited{
@@ -17,7 +30,7 @@ header nav ul li a:link, header nav ul li a:visited{
 }
 
 header nav ul li a:hover{
-    color: rgba(207, 33, 241, 0.6);
+    color: rgba(165, 55, 154, 1);
 }
 
 header nav ul li a:active{
@@ -27,21 +40,22 @@ header nav ul li a:active{
 .header{
     height: 70px;
     padding: 5px;
-    /*position: fixed;
-    z-index: 9999; */
+    position: fixed;
+    z-index: 9999; 
     width: 100%;
     display: flex;
-    background-color: rgba(244, 235, 230, 0.9);
+    background-color: rgba(240, 229, 223, 1);
    justify-content: space-around;
+   opacity: 1;
 }
 
 .header-nav{
-    width: 40%;
-    max-width: 680px;
+    width: 100%;
+    max-width: 800px;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0px 5px 0px 5px;
     font-size: 25px;
 
