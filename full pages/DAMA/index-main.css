@@ -2,11 +2,19 @@
 h1, span {
     color: rgba(165, 55, 154, 1);
 }
+
+main div div div{
+    justify-content: center;
+    display: flex;
+    float: right;
+    align-items: center;
+    text-align: right;
+    
+}
 #main{
-    height: 1700px;
+    height: 100%;
     width: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 
@@ -14,7 +22,7 @@ h1, span {
 
 .main-div1{
     width: 100%;
-    height: 32%;
+    height: 33%;
     margin-top: 70px;
     background-image: url("banner.jpeg");
     background-position: left;
@@ -58,7 +66,6 @@ h1, span {
 #span-main{
     font-size: 35px;
 }
-
 
 .main-div1-div-center{
     width: 100%;
@@ -128,7 +135,7 @@ h1, span {
 /*  DIV2    */
 .main-div2{
     width: 100%;
-    height: 36%;
+    height: 33%;
     padding-top: 60px;
     background-color: rgba(240, 229, 223,1);
     display: block;
@@ -170,7 +177,7 @@ h1, span {
 }
 
 #img-aside-div2{
-    width: 35%;
+    width: 25%;
     height: auto;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -210,8 +217,9 @@ h1, span {
     /*padding-left: calc(30% + 12px);  30% do tamanho da imagem + 20px de deslocamento + 12px de padding original */
             
     background-image: url("circulo.png");
-    background-position: calc(100%);
-    background-size: 33%;
+    background-position: calc(90% + 0px) calc(50% + -5px); /* Ajuste a posição do fundo */
+   
+    background-size: 25%;
     background-repeat: no-repeat;
     
 }
@@ -282,9 +290,8 @@ h1, span {
 /*  DIV3    */
 .main-div3{
     width: 100%;
-    height: 36%;
-    margin-bottom: 5px;
-    background-color: rgba(244, 235, 230, 0.9);
+    height: 27%;
+    background-color: rgba(240, 229, 223,1);
     display: flex;
     text-align: center;
     padding-top: 65px;
@@ -338,7 +345,6 @@ h1, span {
     opacity: 0;
     visibility: hidden;
     user-select: none;
-    
 }
 
 
@@ -363,7 +369,7 @@ h1, span {
 }
 
 .carrossel li{
-    padding-top: 20px;
+    padding-top: 10px;
     list-style: none;
     position: absolute;
     height: 100%;
@@ -403,33 +409,9 @@ h1, span {
 
 
 
+
 /*  DIV3    */
 
 
-/* CSS 
-
-.button-21:active,
-.button-21:focus {
-    outline: none;
-}
-
-.button-21:hover {
-    background-position: -20px -20px;
-}
-
-.button-21:focus:not(:active) {
-    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
-}
-
-*/
-
-main div div div{
-    justify-content: center;
-    display: flex;
-    float: right;
-    align-items: center;
-    text-align: right;
-    
-}
 
 
