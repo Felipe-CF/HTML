@@ -147,6 +147,14 @@
     width: 100%;
     height: 50%;
     display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    padding-right: 35px;
+}
+
+.main-div2-right-top p{
+    font-size: 25px;
 }
 
 .main-div2-right-bottom{
@@ -158,13 +166,8 @@
 }
 
 .main-div2-left img{
-    height: 50%;
+    height: 80%;
     width: 50%;
-}
-
-.main-div2 span{
-    font-size: 30px;
-    color: rgba(165, 55, 154, 1);
 }
 
 .main-div2 h1{
@@ -177,95 +180,6 @@
     font-size: 25px;
 }
 
-.section_top-main-div2{
-    display: flex;
-    height: 50%;
-}
-
-.aside-div2{
-    width: 40%;
-    height: 100%;
-    padding-top: 12px;
-    display: flex;
-    justify-content: center;
-}
-
-.aside-div2 h1{
-    text-align: center;
-    justify-content: center;
-    font-size: 120px;
-    margin-top: 40px;
-}
-
-#img-aside-div2{
-    width: 25%;
-    height: auto;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    
-}
-
-.article-div2-dama{
-    width: 70%;
-    height: auto;
-    text-align: center;
-    padding-top: 15px;
-}
-
-#ufmg{
-    text-decoration: none;
-    color: rgba(255, 40, 40, 1);
-    transition: color 0.5s;
-}
-
-#ufmg:active {
-    color: rgba(255, 100, 110, 0.2);
-}
-
-.section_bottom-main-div2{
-    height: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.section_bottom-main-div2 article{
-    width: 70%;
-    text-align: left;
-    padding-left: 12px;
-    justify-content: center;
-    align-content: center;
-    
-    /*padding-left: calc(30% + 12px);  30% do tamanho da imagem + 20px de deslocamento + 12px de padding original */
-            
-    background-image: url("circulo.png");
-    background-position: calc(90% + 0px) calc(50% + -5px); /* Ajuste a posição do fundo */
-   
-    background-size: 25%;
-    background-repeat: no-repeat;
-    
-}
-
-.section_bottom-main-div2 article h1{
-    font-size: 50px;
-    margin-bottom: 10px;
-    color: rgba(165, 55, 154, 1);
-}
-
-.section_bottom-main-div2 article p{
-    font-size: 25px;
-}
-
-.section_bottom-main-div2 article span{
-    font-size: 30px;
-}
-
-.section_bottom-main-div2 aside{
-    height: 100%;
-    width: 30%;
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center;
-}
 
 .button-main-div2 {
     background-color: rgba(255, 70, 70, 1);
@@ -315,7 +229,7 @@
     height: 33%; 
     max-height: 400px;
     min-height: 400px;
-
+    padding: 5px;
     background-color: rgba(240, 229, 223,1);
     display: flex;
     justify-content: space-around;
