@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="index-header.css" />
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="index-main.css" />
     <link rel="stylesheet" href="index-footer.css" />
 
@@ -21,11 +21,11 @@
   </head>
 
   <body>
-    <header class="borda0 header">
-      <div class="borda0 header-div header-div-left">
-        <img class="img-dama" src="dama-small.png" alt="" />
+    <header class="borda2">
+      <div class="borda1 header-div header-div-left">
+        <img src="logo-dama.png" alt="logomarca do Dama" />
       </div>
-      <nav class="borda0 header-nav">
+      <nav class="borda1 header-nav">
         <ul>
           <li><a href="#main">Home</a></li>
           <li><a href="#main-div2">Quem Somos</a></li>
@@ -34,71 +34,53 @@
           <li><a href="#main">Denunciar</a></li>
         </ul>
       </nav>
-      <div class="borda0 header-div-right">
+      <div class="borda1 header-div-right">
         <button class="button-header">Login</button>
-        <button class="button-header">Criar Conta</button>
+        <button class="button-header" onclick="criarConta()">Criar Conta</button>
       </div>
     </header>
 
-    <main id="main" class="borda0">
-      <div class="main-div1 borda0">
-        <div class="borda0 main-div1-div-top">
-          <div class="borda0 main-div1-div-top-divs"></div>
-          <div class="borda0 main-div1-div-top-divs">
+    <main id="main" class="borda1">
+
+      <div class="main-div main-div1 borda1">
+        <div class="borda1 main-div1-left">
+        </div>
+        <div class="borda1 main-div1-right">
+          <div class="borda2 main-div1-right-top">
             <p id="missao">
               Enfrentando o medo e o silêncio <br>com
-              <span id="span-main">conscientização e empoderamento,</span><br />para juntos
-              combatermos a violência contra a mulher,<br> no estado do Rio Grande do Norte.
+              <span>conscientização e empoderamento,</span><br />para  juntos
+              <span> combatermos</span> a violência contra a mulher,<br> no estado do Rio Grande do Norte.
             </p>
           </div>
-        </div>
-        <div class="borda0 main-div1-div-center">
-          <div class="borda0 main-div1-div-center-divs"></div>
-          <div class="borda0 main-div1-div-center-divs"></div>
-          <div class="borda0 main-div1-div-center-divs">
+          <div class="borda2 main-div1-right-bottom">
             <button class="button-main">Faça sua Denúncia</button>
           </div>
         </div>
-        <div class="borda0 main-div1-div-bottom"></div>
       </div>
 
-      <div id="main-div2" class="main-div2 borda0">
-
-        <section  class="borda0 section_top-main-div2">
-
-          <aside class="borda0 aside-div2 section-top">
-            <img id="img-aside-div2" src="logo.png" alt="logo dama">
-            <h1 id="img-aside-div2-titulo">DAMA</h1>
-          </aside>
-
-          <article id="quem-somos" class="borda0 article-div2-dama">
-            <h1 >Quem somos</h1>
-            <p>Somos um grupo de estudantes do IFRN-CNAT que, se baseando em um estudo da UFMG,<br> que informa sobre a <span><a id="ufmg" href="https://ufmg.br/comunicacao/assessoria-de-imprensa/release/pesquisa-coordenada-pela-ufmg-revela-alto-indice-de-subnotificacao-de-violencia-contra-as-mulheres-no-brasil#:~:text=Pesquisa%20coordenada%20pela%20UFMG%20revela%20alto%20%C3%ADndice%20de%20subnotifica%C3%A7%C3%A3o,contra%20as%20mulheres%20no%20Brasil&text=A%20subnotifica%C3%A7%C3%A3o%20de%20viol%C3%AAncia%20contra,%2C%20f%C3%ADsica%20e%20sexual%2C%20respectivamente">subnotificação de denúncias de violência contra a mulher</a></span>,<br> 
-              decidimos criar um <span class="span-afirmacao-positiva">espaço seguro</span>, de <span class="span-afirmacao-positiva">fácil acesso</span> e <span class="span-afirmacao-positiva">anônimo</span>, para <span class="span-afirmacao-positiva">ajudar mulheres<br> a denunciar casos de violência
-              no estado do Rio Grande do Norte.</span></p>
-          </article>
-
-        </section>
-
-        <section class="section_bottom-main-div2">
-          <article>
-            <h1>Ajude nessa causa</h1>
-            <p>É preciso <span>enfrentar esse problema juntos!</span><br> Por isso, convidamos você, mulher, a ser <span>inspiração para outras!</span><br>Conte sua <span>história de superação</span> contra a violência.</p> 
-          </article>
-          
-          <aside class=" borda0">
+      <div class="main-div2 borda1">
+        <div class="main-div2-left borda1">
+          <img src="logo-dama.png" alt="logo do dama">
+        </div>
+        <div class="main-div2-right borda1">
+          <div class="main-div2-right-top borda2"></div>
+          <div class="main-div2-right-bottom borda2">
             <button class="button-main-div2">Compartilhe sua história</button>
-          </aside>
-        </section>
+          </div>
+        </div>
       </div>
 
-      <div id="main-div3" class="main-div3 borda0">
-        <article class="article-direitos borda0">
-          <h1>Conheça seus direitos</h1>
-          <p>Nós do <span>DAMA</span> acreditamos que <span>conhecimento também é poder!</span><br>
-            Por isso, trazemos até você algumas leis que <span>protegem, informam e ajudam</span> as mulheres no Brasil.
-          </p>
-        </article>
+      <div id="main-div main-div3" class="main-div3 borda1">
+        <div class="borda2 main-div3-left">
+          <article class="article-direitos borda0">
+            <h1>Conheça seus direitos</h1>
+            <p>Nós do <span>DAMA</span> acreditamos que <span>conhecimento também é poder!</span><br>
+              Por isso, trazemos até você algumas leis que <span>protegem, informam e ajudam</span> as mulheres no Brasil.
+            </p>
+          </article>
+        </div>
+        <div class="borda2 main-div3-right">
           <ul class="carrossel borda0">
             <li class="borda0">
               <input type="radio" id="slide1" name="slide" checked>
@@ -125,11 +107,13 @@
               <label for="slide5"></label>
               <img src="minuto.jpeg" alt="">
             </li>
-          </ul>
-      </div>
+        </ul>
+        </div>
+      </div> 
+
     </main>
 
-    <footer class="borda0 footer">
+    <!-- <footer class="borda0 footer">
         <div class="footer-div-left borda0">
             <p>emergencia?</p>
             <h1><span>ligue 180</span></h1>
@@ -152,6 +136,8 @@
         <div class="footer-div-right borda0">
           <img src="logo_rn.png" alt="">
         </div>
-    </footer>
+    </footer> -->
+
+    <script src="js/funcao.js"></script>
   </body>
 </html>

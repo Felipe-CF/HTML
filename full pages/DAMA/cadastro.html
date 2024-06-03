@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="cadastro-main.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONT -->
+
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <header class="borda1 header">
+      <div class="borda1 header-div header-div-left">
+        <img class="img-dama" src="dama-small.png" alt="" />
+      </div>
+      <nav class="borda1 header-nav">
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#main-div2">Quem Somos</a></li>
+          <li><a href="#main-div3">Conheça seus direitos</a></li>
+          <li><a href="#redes">Rede de apoio</a></li>
+          <li><a href="#main">Denunciar</a></li>
+        </ul>
+      </nav>
+      <div class="borda1 header-div-right">
+        <button class="button-header">Login</button>
+        <button class="button-header">Criar Conta</button>
+      </div>
+    </header>
+
+    <main id="main" class="borda1">
+      <div class="div-form">
+        <form class="borda1 form" action="#" method="get" name="cadastro">
+          <label id="titulo-form">Cadastro</label>
+          <label for="nome" >Nome de Usuário</label>
+          <input type="text" id="nome" name="nome" placeholder="Crie seu nome no DAMA" onfocus="removePlaceholder(this.id)" onblur="addPlaceholder(this.id)">
+          
+          <label for="senha">Senha</label>
+          <div>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha"  onfocus="removePlaceholder(this.id)" onblur="addPlaceholder(this.id)">
+            <span class="visibilidade-senha" onclick="visibilidadeSenha('senha')">👁️</span>
+          </div>
+          
+          <label for="conf-senha">Confirme a Senha</label>
+          <div>
+            <input type="password" id="conf-senha" name="conf-senha" placeholder="Confirme sua senha" onfocus="removePlaceholder(this.id)" onblur="addPlaceholder(this.id)" pattern="[A-Za-z0-9].{8,}"/>
+            <span class="visibilidade-senha" onclick="visibilidadeSenha('conf-senha')">👁️</span>
+          </div>
+          <div>
+            <span></span>
+          </div>
+          <input type="submit" name="f_enviar" value="Enviar">
+        </form>
+      </div>
+    </main>
+
+    <footer class="borda0 footer">
+        <div class="footer-div-left borda0">
+            <p>emergencia?</p>
+            <h1><span>ligue 180</span></h1>
+        </div>
+        <div class="footer-div-center borda0">
+          <p><span>ajuda</span></p>
+          <p>
+            <a href="#">sobre nós</a>
+          </p>
+          <p>
+            <a href="#">seja apoiador</a>
+          </p>
+          <p>
+            <a href="#">seja voluntário</a>
+          </p>
+          <p>
+            <a href="#">conheça seus direitos</a>
+          </p>
+        </div>
+        <div class="footer-div-right borda0">
+          <img src="logo_rn.png" alt="">
+        </div>
+    </footer>
+    <script src="js/funcao.js"></script>
+  </body>
+</html>
