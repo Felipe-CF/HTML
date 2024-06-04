@@ -37,6 +37,9 @@
 
     <main id="main" class="borda0">
       <div class="div-form">
+        <div id="confirmar" class="oculto">
+          <!-- aqui vem a telinha -->
+        </div>
         <form class="borda0 form" action="#" method="get" name="cadastro">
           <h1>Cadastro</h1>
           <label for="nome" >Nome de Usuário</label>
@@ -81,7 +84,7 @@
               <button class="button-form">Cancelar</button>
             </div>
             <div id="criar" class="borda0">
-              <button class="button-form">Cadastrar</button>
+              <button class="button-form" onclick="confirmar()">Cadastrar</button>
             </div>
           </div>
           
@@ -114,5 +117,6 @@
   </footer>
 
     <script src="js/funcao.js"></script>
+    <script src="js/cadastro.js"></script>
   </body>
 </html>

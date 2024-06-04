@@ -3,7 +3,7 @@ main {
     padding: 5px;
 
     background-color: rgba(240, 229, 223, 1);
-    background-image: url("images/bg-cadastro.png");
+    background-image: url("../images/bg-cadastro.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
@@ -15,6 +15,11 @@ main {
     font-size: 18px;
      
 }
+
+.embassado{
+    opacity: 0.5;
+}
+
 
 .div-form {
     height: 500px; /* A div-form agora ocupa 100% da altura do main */
@@ -28,11 +33,13 @@ form {
     width: 100%;
     height: 100%;
     padding: 15px 70px;  
-    text-align: left;     
+    text-align: left;   
+    z-index: 10;  
 }
 
 form h1{
     margin-bottom: 5px;
+    text-align: center;
 }
 
 select{
@@ -189,4 +196,16 @@ form div {
     /* background-color: rgba(255, 100, 110, 0.2); */
     opacity: 0.8;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+#confirmar{
+    width: 500px;
+    height: 400px;
+    display: none;
+}
+.oculto{
+
+    z-index: 99999;
+    opacity: 1;
 }
