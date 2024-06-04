@@ -20,6 +20,15 @@ function addPlaceholder(id){
     } 
     else if (id == 'conf-senha'){
         var place = "Confirme sua senha"
+    }
+    else if(id === 'cnpj-input'){
+        var place = "XX.XXX.XXX/XXXX-XX"
+    } 
+    else if(id === 'email'){
+        var place = "exemplo@email.com"
+    } 
+    else if(id === 'contato'){
+        var place = "84 9XXXX-XXXX"
     } 
 
     if (input && input.value == ''){

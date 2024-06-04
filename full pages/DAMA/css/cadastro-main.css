@@ -3,7 +3,7 @@ main {
     padding: 5px;
 
     background-color: rgba(240, 229, 223, 1);
-    background-image: url("bg-cadastro.png");
+    background-image: url("images/bg-cadastro.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
