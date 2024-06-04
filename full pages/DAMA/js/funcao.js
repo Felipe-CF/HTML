@@ -38,3 +38,26 @@ function visibilidadeSenha(id){
         input.type = 'password';
     }
 }
+
+function mostrarCampos(value){
+
+    if (value !== 'anonimo'){
+        var elementos = document.querySelectorAll('.hidden')
+
+        elementos.forEach(function(elemento){
+            elemento.classList.remove('hidden');
+            elemento.classList.add('visivel');
+        });
+
+    }
+
+    else{
+        var elementos = document.querySelectorAll('.visivel')
+        elementos.forEach(function(elemento){
+            elemento.classList.remove('visivel');
+            elemento.classList.add('hidden');
+        });
+
+    }
+    
+}

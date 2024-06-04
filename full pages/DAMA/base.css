@@ -54,9 +54,11 @@ main {
 footer {
     width: 100%;
     max-width: 1366px;
-    height: 8.3%;
-    max-height: 120px;
-    padding: 20px;
+    height: 8.3%; 
+    height: 120px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     background-color: rgba(240, 229, 223, 1);
 

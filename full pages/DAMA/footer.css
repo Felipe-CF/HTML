@@ -1,70 +1,62 @@
-/* footer{
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(240, 229, 223,1);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+        .footer-div {
+            height: 100%;
+            width: 400px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .footer-div-left {
+            height: 100%;
+            width: 20%;
+            max-height: 110px;
+            text-align: left;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .footer-div-center {
+            width: 46%;
+            height: 100%;
+            flex-direction: column;
+        }
+        .footer-div-center-top {
+            width: 100%;
+            text-align: center;
+        }
+        .footer-div-center-bottom {
+            width: 100%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            padding: 5px;
+        }
+
+        .footer-div-center-bottom p {
+            margin: 0;
+        }
+        
+        
+        .footer-div-right{
+            width: 25%;
+            text-align: left;
+            align-items: flex-start;
+        }
+        
+        .footer-div-center p {
+            display: block;
+        }
 
 
-footer div{
-    height: 50%;
-    width: 33%;
-    
-}
+        .footer-div img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
 
-.footer div img{
-    height: 100%;
-    width: 50%;
-}
-
-.footer-div-left{
-    text-align: left;
-    padding-left: 55px;
-    flex-direction: column;
-    align-items: left;
-    height: 100%;
-    
-}
-.footer-div-right{
-    justify-content: center;
-    align-items: center;
-    padding-left: 55px;
-    
-}
-
-.footer-div-center{
-    padding-left: 55px;
-    flex-direction: column;
-    text-align: left;
-    align-items: left;
-    margin: 0;
-}
-.footer-div-center p{
-    font-size: 20px;
-    padding-bottom: 5px;
-}
-.footer-div-center span{
-    text-decoration: underline;
-    font-size: 30px;
-}
-.footer-div-center a{
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-}
-
-.footer-div-left p{
-    font-size: 30px;
-    color: #000;
-    padding: 1px;
-}
-
-.footer-div-left h1{
-    font-size: 50px;
-    color: rgba(165, 55, 154, 1);
-    text-decoration: underline;
-    
-} */
+        .footer-div-center a {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
