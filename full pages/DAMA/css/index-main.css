@@ -1,5 +1,8 @@
 
-
+span{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
 /*  DIV1    */
 .main-div{

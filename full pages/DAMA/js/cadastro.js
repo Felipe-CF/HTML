@@ -28,7 +28,6 @@ function addPlaceholder(id){
     if (input && input.value == ''){
         input.setAttribute('placeholder', place);
     }
-
 }
 
 

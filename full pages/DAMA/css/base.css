@@ -68,12 +68,6 @@ h1, span {
     color: rgba(165, 55, 154, 1);
 }
 
-span{
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-
 
 /* separação visual */
 .borda0{
