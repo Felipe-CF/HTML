@@ -31,15 +31,12 @@
       </nav>
       <div class="borda0 header-div-right">
         <button class="button-header" onclick="Login()">Login</button>
-        <button class="button-header">Criar Conta</button>
+        <button class="button-header" onclick="criarConta()">Criar Conta</button>
       </div>
     </header>
 
     <main id="main" class="borda0">
       <div class="div-form">
-        <div id="confirmar" class="oculto">
-          <!-- aqui vem a telinha -->
-        </div>
         <form class="borda0 form" action="#" method="get" name="cadastro">
           <h1>Cadastro</h1>
           <label for="nome" >Nome de Usuário</label>
@@ -84,13 +81,26 @@
               <button class="button-form">Cancelar</button>
             </div>
             <div id="criar" class="borda0">
-              <button class="button-form" onclick="confirmar()">Cadastrar</button>
+              <button id="confirmar-button" class="button-form" >Cadastrar</button>
             </div>
           </div>
           
         </form>
       </div>
     </main>
+
+    <div id="cadastrado" class="oculto borda0">
+      <div class="cadastrado-janela borda0">
+          <h1>
+            Usuaria(o) cadastrada(o) com sucesso!<br>
+          </h1>
+      </div>
+      <div class="cadastrado-janela borda0">
+          <h1>
+            <span onclick="Login()">Acesse o DAMA com a sua nova conta aqui</span>            
+          </h1>
+      </div>
+    </div>
 
     <footer class="borda0">
       <div class="footer-div footer-div-left borda0">

@@ -1,3 +1,4 @@
+// dados do form
 function removePlaceholder(id){
     var input = document.getElementById(id)
     input.removeAttribute('placeholder')
@@ -29,7 +30,6 @@ function addPlaceholder(id){
         input.setAttribute('placeholder', place);
     }
 }
-
 
 function visibilidadeSenha(id){
     const input = document.getElementById(id)
@@ -63,9 +63,32 @@ function mostrarCampos(value){
     }
     
 }
+// dados do form
 
-function confirmar(){
-    var main = document.getElementById('main')
+var confirmar_b = document.getElementById('confirmar-button')
+
+// Adiciona um event listener para o evento de clique no documento
+document.addEventListener('click', function(event) {
+
+    // Verifica se o clique ocorreu no botão de confirmar cadastro
+    if (event.target.id === 'confirmar-button') {
+        var janela = document.getElementById('cadastrado');
+        if (janela.classList.contains('oculto')) {
+            janela.classList.remove('oculto');
+            janela.classList.add('cadastrado');
+            var main = document.getElementById('main');
+            main.classList.add('embassado');
+        }
+    } 
+    else { // Se o clique não ocorreu no botão
+        var janela = document.getElementById('cadastrado');
+        if (janela.classList.contains('cadastrado')) { // Verifica se a classe 'cadastrado' está presente
+            janela.classList.remove('cadastrado');
+            janela.classList.add('oculto');
+            var main = document.getElementById('main');
+            main.classList.remove('embassado');
+        }
+    }
     
-    main.classList.add('embassado')
-}
+});
+
